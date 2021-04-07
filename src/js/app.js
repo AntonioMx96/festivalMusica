@@ -33,5 +33,5 @@ const navegacionFija = () => {
     })
 
 
-    observer.observe(document.querySelector('.sobre-festival'))
+    observer.observe(document.querySelector('.video'))
 }

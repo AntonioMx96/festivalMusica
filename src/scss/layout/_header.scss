@@ -1,15 +1,17 @@
-.header{
+.header {
     background-color: $verde;
+    .contenido-header {
+        padding: $separacion / 2 0;
 
-    .contenido-header{
-        padding: $separacion/2 0;
-        @include telefono{
+        @include tablet {
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
+
     }
-    h1{
+
+    h1 {
         color: $blanco;
         margin-bottom: 1rem;
         text-align: center;
@@ -18,22 +20,21 @@
         }
     }
 
-    &.fijo{
+    &.fijo {
         position: fixed;
         width: 100%;
         box-shadow: 0 .3rem .4rem #444;
     }
-   
 }
-.navegacion-principal{
-    display:flex ;
-    gap:2rem;
-    justify-content: center;
-    a{
-        color:$blanco;
-        font-size: 2rem;
 
-        &:hover{
+.navegacion-principal {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    a {
+        color: $blanco;
+        font-size: 2rem;
+        &:hover {
             color: $amarillo;
         }
     }
